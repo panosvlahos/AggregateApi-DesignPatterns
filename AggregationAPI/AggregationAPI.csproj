@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj" />
+    <ProjectReference Include="..\CacheService\CacheServices.csproj" />
+    <ProjectReference Include="..\FactoryDesignPattern\FactoryDesignPatternServices.csproj" />
+    <ProjectReference Include="..\NewsApiService\NewsApiServices.csproj" />
+    <ProjectReference Include="..\OpenWeatherMapServices\OpenWeatherMapServices.csproj" />
+    <ProjectReference Include="..\SingletonDesignPattern\SingletonDesignPatternServices.csproj" />
+    <ProjectReference Include="..\StatisticServices\StatisticServices.csproj" />
+    <ProjectReference Include="..\StrategyDesignPatternServices\StrategyDesignPatternServices.csproj" />
+    <ProjectReference Include="..\TwitterService\TwitterServices.csproj" />
+  </ItemGroup>
+
+</Project>
